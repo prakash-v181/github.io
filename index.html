@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assets/logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="option">
+                    <div class="lib-option nav-option" >
+                        <img src="./assets/library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Create your paylist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We 'll keep you up to date on new eposodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                <img src="./assets/backward_icon.png">
+                <img src="./assets/forward_icon.png" class="hide">
+                </div>
+                <div class="sticky-nav-options">
+                <button class="badge nav-item dark-badge"><i class="fa-regular fa-money-bills" style="margin-right: 5px;"  ></i> Premium</button>
+                <button class="badge nav-item dark-badge"><i class="fa-solid fa-envelope" style="margin-right: 5px;"></i>Support</button>
+                <button class="badge nav-item dark-badge" ><i class="fa-solid fa-download" style="margin-right: 5px;"></i></i>Download</button>
+                
+                <button class="badge nav-item hide">Explore Premium</button>
+                <button class="badge nav-item dark-badge" ><i class="fa-regular fa-circle-down" style="margin-right: 5px;"></i>Install app</button>
+                <i class="fa-regular fa-user nav-item"></i>
+                </div>  
+            </div>
+
+
+            <h2>Artist album and songs </h2>
+            <div class="cards-container1">
+                <div class="card1">
+                    <img src="artist/appu.jpg" class="card-img1">
+                    <p class="card-title1">Puneeth Rajkumar</p>
+                    <p class="card-info1">Indian actor and playback singer
+                        Haaru Haaru
+                        Ninnindale · 2014
+                        Ninthe Ninthe
+                        Ninnindale · 2014
+                        Neenello Naanalle
+                        Chalisuva Modagalu · 1982
+                        Kadre Thappu Kondre Thappu
+                        Parashuram · 1989
+                        Kannige Kaanuva
+                        Yarivanu · 1984
+                        Hodi Hodi
+                        Aakash · 2005 
+                    </p>
+                </div>
+                <div class="card1">
+                    <img src="artist/hamsalekha.jpg" class="card-img1">
+                    <p class="card-title1">Hamsalekha</p>
+                    <p class="card-info1">Indian film composer and songwrite
+                        
+Raja Raja
+Preethsod Thappa...? (Original Motion Picture Soundtrack) · 1998
+Kushalave Kshemave
+Yaare Neenu Cheluve · 1998
+Loveenalli Bidre
+Raja Huli · 2013
+Bangaradinda
+Preethsod Thappa...? (Original Motion Picture Soundtrack) · 1998
+Oh Gulabiye
+Om (Original Motion Picture Soundtrack) · 1994
+
+
+ </p>
+                </div>
+                <div class="card1">
+                    <img src="artist/drraju.jpg" class="card-img1">
+                    <p class="card-title1">Dr Rajkumar</p>
+                    <p class="card-info1">
+                        Nagutha Nagutha Baalu
+                        Parashuram
+                        
+                        Naavaduva Nudiye Kannada Nudi
+                        Gandhada Gudi Part 2
+                        Jenina Holeyo
+                        Chalisuva Modagalu
+                        
+                        Hrudayadali Idenidhu
+                        Devatha Manushya · 2014
+                        Bombeyatavayya
+                        Shruthi Seridaga
+                        
+                        Thayi Thayi
+                        Vamshi</p>
+                </div>
+                <div class="card1">
+                    <img src="artist/arijit.jpg" class="card-img1">
+                    <p class="card-title1">Arijit Singh</p>
+                    <p class="card-info1">
+                        Bandeya Rey Bandeya
+                        Simmba · 2018
+                        
+                        O Maahi
+                        Dunki · 2023
+                        
+                        Hamari Adhuri Kahani
+                        Hamari Adhuri Kahani · 2015
+                        
+                        Desh Mere
+                        Bhuj · 2021
+                        
+                        Tera Yaar Hoon Main
+                        Sonu Ke Titu Ki Sweety · 2018
+                        
+                        Lutt Putt Gaya
+                        Dunki · 2023
+                        
+                         </p>
+                </div>
+                <div class="card1">
+                    <img src="artist/Shreya.jpg" class="card-img1">
+                    <p class="card-title1">Shreya Ghoshal</p>
+                    <p class="card-info1">
+                        Aaguner
+                        Pushpa 2: The Rule · 2024
+                        
+                        Sooseki
+                        Pushpa 2 The Rule - Hindi · 2024
+                        
+                        Chikni Chameli
+                        Agneepath · 2011
+                        
+                        Yimmy Yimmy
+                        Yimmy Yimmy · 2024
+                        
+                        Guli Mata
+                        Guli Mata · 2023
+                        
+                        Angaaron
+                        Pushpa 2 The Rule - Hindi · 2024
+                        
+                     </p>
+                </div>
+                <div class="card1">
+                    <img src="artist/sonusigam.jpg" class="card-img1">
+                    <p class="card-title1">Sonu Nigam</p>
+                    <p class="card-info1">
+                        Sandese Aate Hai
+                        Border · 1999
+                        
+                        Abhi Mujh Mein Kahin
+                        Agneepath · 2011
+                        
+                        Papa Meri Jaan
+                        Animal · 2023
+                        
+                        Papa Mere Papa
+                        Main Aisa Hi Hoon · 2005
+                        
+                        Apne
+                        Apne · 2007
+                        
+                        Har Ek Friend Kamina Hota Hai
+                        Chashme Buddoor · 2013
+                        
+                        Sandese Aate Hai Ke Ghar Kab Aaoge
+                        Fix to Mix, Vol. 1 (DJ Mix Version) · 1997
+                        
+                        Tumse Milke Dil Ka </p>
+                </div>
+            </div>
+
+
+
+
+
+              
+            <h2>Recently played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="assets/card1img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Listen to Hindi Viral Hits which has over 23 songs.
+                        top 50 hindi songs of the week 
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="assets/viral0.jpg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most played tracks right... </p>
+                </div>
+                <div class="card">
+                    <img src="assets/viral1.jpg" class="card-img">
+                    <p class="card-title">Top 50 - India</p>
+                    <p class="card-info">Download the music in high quality on JioSaavn. Home · Hindi Songs Playlist ..</p>
+                </div>
+                <div class="card">
+                    <img src="assets/viral2.jpg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most played tracks right... </p>
+                </div>
+            </div>
+            <h2>Trending now near you</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="assets/card2img.jpeg" class="card-img">
+                    <p class="card-title">Hits Songs </p>
+                    <p class="card-info">Packed with all the best songs of 2025. Today's most streamed tracks and top songs -
+                         worldwide! Pop, Dance, Hip-Hop and Latin hot hits!
+                         Global Top Charts – Top 10 Viral Songs ; Bollywood - India Lounge  </p>
+                </div>
+                <div class="card">
+                    <img src="assets/dev1.jpg" class="card-img">
+                    <p class="card-title">MOST BEAUTIFUL SONG OF SHIVA</p>
+                    <p class="card-info">Jai Jai Shiv Shambhu - MOST BEAUTIFUL SONG OF SHIVA · Jai Jai Shiv Omkara - MOST BEAUTIFUL SONG OF SHIVA ·
+                         Shyama Aan Baso Vrindavan Me - BEAUTIFUL KRISHNA BHAJAN. </p>
+                </div>
+                <div class="card">
+                    <img src="assets/dev3.jpg" class="card-img">
+                    <p class="card-title">Buddha Paurnima Special</p>
+                    <p class="card-info">Buddha Paurnima Special | बुद्ध पौर्णिमा स्पेशल | Top 10 Buddha Geete | Gautam Buddha Songs #marathisong ...
+                        बुद्ध पूर्णिमा २०२४, Buddh Purnima Special Songs 2025 </p>
+                </div>
+                <div class="card">
+                    <img src="assets/card4img.jpeg" class="card-img">
+                    <p class="card-title">Trending Now Tamil - 50 Songs</p>
+                    <p class="card-info">Tamil Hits | New Songs | Tamil Songs Playlist · Kekkanum Guruve - BTS | Hari Hara Veeramallu | PSPK | Nidhi | Maragadhamani|AM Rathnam|Jyothi Krisna · Kekkanum ...</p>
+                </div>
+                <div class="card">
+                    <img src="assets/kgf.jpg" class="card-img">
+                    <p class="card-title">KGF 2 Kannada Audio Songs </p>
+                    <p class="card-info">Mehabooba Video Song (Telugu) | KGF Chapter 2 | RockingStar Yash | Prashanth Neel | Ravi Basrur
+                        KGF Chapter 2 All 5 Songs (Hindi) | Rocking Star Yash | Motivational Song |Trending Song 2021
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="assets/card3img.jpeg" class="card-img">
+                    <p class="card-title">Most Listing songs</p>
+                    <p class="card-info">Your daily update of the most played tracks right... </p>
+                </div>
+                <div class="card">
+                    <img src="assets/sye.jpg" class="card-img">
+                    <p class="card-title">Varsudu</p>
+                    <p class="card-info">Your daily update of the most played tracks right... Telugu songs playlist</p>
+                </div>
+                <div class="card">
+                    <img src="assets/vr.jpg" class="card-img">
+                    <p class="card-title">Ra Ra Rukkarama</p>
+                    <p class="card-info">Kannada song kiccha sudeep || music || Your daily update of the most played tracks right... </p>
+                </div>
+                <div class="card">
+                    <img src="assets/pushpa.jpg" class="card-img">
+                    <p class="card-title">Pushapa KISSIK</p>
+                    <p class="card-info">KISSIK Song | Pushpa 2 The Rule | Allu Arjun | Sukumar | Sreeleela | DSP ... Kumar Sanu Hit Songs | 90s Superhit Hindi Romantic Songs ... </p>
+                </div>
+                <div class="card">
+                    <img src="assets/kaabil.jpg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Kaabil Hoon is sung by Jubin Nautiyal and Palak Muchhal. What is the duration of Kaabil Hoon? The duration of the song Kaabil Hoon 
+                         </p>
+                </div>
+                <div class="card">
+                    <img src="assets/dev4.jpg" class="card-img">
+                    <p class="card-title">Jesus Songs</p>
+                    <p class="card-info">Christian Songs | Most Popular Telugu Jesus Songs  </p>
+                </div>
+                <div class="card">
+                    <img src="assets/dev01.jpg" class="card-img">
+                    <p class="card-title">TIslamic Songs</p>
+                    <p class="card-info">Best Islamic Songs · Qurban Meri Jaan Mohammad Ke naam Pe | Mohd. · Mera Payamber Azeem Tar Hai (Audio) Smita Adhikari | Naat E Rasool Pak | Hindi Muslim ... </p>
+                </div>
+                <div class="card">
+                    <img src="assets/dev02.jpg" class="card-img">
+                    <p class="card-title">Islamic Music Hits playlist</p>
+                    <p class="card-info">Listen to the Top Islamic Music Hits playlist by Awakening Music on Apple Music. 34 Songs. Duration: 2 hours, 20 minutes.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="assets/dev03.jpg" class="card-img">
+                    <p class="card-title">Islamic Songs · Piya Haji</p>
+                    <p class="card-info"> Best Muslim Devotional Songs | Islamic Songs · Is Shaan-E-Karam Ka Kya Kehna with Lyrics | Nusrat Fateh Ali Khan | Sufi Qawwali | Islamic Songs · Piya Haji ... </p>
+                </div>
+
+            </div>
+
+
+            
+            <h2>Kannada Songs Playlist</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="kannada/kantara.jpg" class="card-img">
+                    <p class="card-title">Singara Siriye</p>
+                    <p class="card-info">Kantara - Official Playlist · Kantara - Varaha Roopam(Lyric Video)
+                        | Sai Vignesh | Rishab Shetty | Ajaneesh Loknath | Hombale Films · Kantara - Singara Siriye | ... 
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="kannada/devarak.jpg" class="card-img">
+                    <p class="card-title">ಕಿರುತೆರೆ ನಟಿ ರಜಿನಿ ಡಾನ್ಸ್ ವಿಡಿಯೋ</p>
+                    <p class="card-info">Devara Part -1 NEW SONG (VIDEO) | NTR | Saif Ali Khan | Janhvi | Koratala Siva |
+                         Anirudh | Sep 27 · ಕಿರುತೆರೆ ನಟಿ ರಜಿನಿ ಡಾನ್ಸ್ ವಿಡಿಯೋ kannada actress Rajini ... </p>
+                </div>
+                <div class="card">
+                    <img src="kannada/Ganesh1.jpg" class="card-img">
+                    <p class="card-title">Krishnam Pranaya Sakhi</p>
+                    <p class="card-info">Krishnam Pranaya Sakhi Movie Dwapara Video Song Sung by: 
+                        Jaskaran Singh Lyrics: Dr.V.Nagendra Prasad Music by: Arjun Janya ...</p>
+                </div>
+                <div class="card">
+                    <img src="kannada/womensad.jpg" class="card-img">
+                    <p class="card-title"> Songs Audio Jukebox Kannada</p>
+                    <p class="card-info">
+                        Listen to All Golden Star Ganesh 100 Songs Audio Jukebox Kannada Movies 
+                        Selected Hits Exclusive Only On Anand Audio Kannada Youtube Channel. </p>
+                </div>
+                <div class="card">
+                    <img src="kannada/devarak.jpg" class="card-img">
+                    <p class="card-title">Kool Kannada songs</p>
+                    <p class="card-info">Golden Star Ganesh Super Hit Songs · Kool Kannada Movie - Neenu Bandare Hatira Song | Ganesh |
+                         Sana Khan · Kool Kannada Movie - Inky Pinky Full Song | Ganesh | ...</p>
+                </div>
+                <div class="card">
+                    <img src="kannada/Lastest kannada.jpg" class="card-img">
+                    <p class="card-title">Kannada All Time Hits</p>
+                    <p class="card-info">Kannada All Time Hits - Video Songs | Lahari Music · Madhyarathrili HD Video Song |
+                         Shanthi Kranthi | Ravichandran, Juhi</p>
+                </div>
+                <div class="card">
+                    <img src="kannada/group1.jpg" class="card-img">
+                    <p class="card-title"> Aramane | Ganesh | Gurukiran | Kaviraj | Jhankar Music</p>
+                    <p class="card-info">Golden Star Ganesh Hit Songs · Kolle Nannanne - Lyrical Song | 
+                        Aramane | Ganesh 
+
+
+
+                        Missing: devara ‎| Show results with: devara</p>
+                </div>
+                <div class="card">
+                    <img src="kannada/group2.jpg" class="card-img">
+                    <p class="card-title">devara ‎|</p>
+                    <p class="card-info">| Gurukiran | Kaviraj | Jhankar Music · Patra Bareyala | Aramane | Ganesh | ... </p>
+                </div>
+            </div>
+            <h2>Hindi Songs Playlist</h2>
+
+            <div class="cards-container">
+                <div class="card">
+                    <img src="hindi/hinidspotify.jpg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Listen to Hindi Viral Hits which has over 23 songs.
+                        top 50 hindi songs of the week 
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="hindi/newhindi.jpg" class="card-img">
+                    <p class="card-title">Hindi Songs ❤️</p>
+                    <p class="card-info">Hindi Songs ❤️ · Jachhey Mujhe | Shivin Narang, Elli AvrRam | KS Abhishek |
+                         Shashwat Singh | Priya Saraiya | Vijay G · Tumsa Koi Pyaara - Lyrical | Khuddar | ... </p>
+                </div>
+                <div class="card">
+                    <img src="hindi/oldisgold.jpg" class="card-img">
+                    <p class="card-title"> Unmatched Musical Experience.</p>
+                    <p class="card-info">Listen & Download the Latest & Bollywood's Best Hindi Songs, 
+                        Including Top 50 Old Songs and Top 50 Hindi Songs for an Unmatched Musical Experience.</p>
+                </div>
+                <div class="card">
+                    <img src="hindi/group3.jpg" class="card-img">
+                    <p class="card-title">Ye Chand Sa Roshan Chehra</p>
+                    <p class="card-info">A. Some of the best romantic Hindi songs are 'Lag Ja Gale', 'Hum Akele Yuhi', 
+                        'Ye Chand Sa Roshan Chehra' and 'Aanchal Me Saja Le'. Sad songs that make you feel ... </p>
+                </div>
+                <div class="card">
+                    <img src="hindi/group1.jpg" class="card-img">
+                    <p class="card-title">Zara Hatke Zara Bachke</p>
+                    <p class="card-info">Tere Vaaste (From "Zara Hatke Zara Bachke"). Varun Jain, Sachin-Jigar,
+                         Shadab Faridi, Altamash Faridi, Amitabh Bhattacharya. </p>
+                </div>
+                <div class="card">
+                    <img src="hindi/group2.jpg" class="card-img">
+                    <p class="card-title">❤️|90's के सदाबहार गाने ❤️</p>
+                    <p class="card-info">❤️|90's के सदाबहार गाने ❤️| Old Hindi Love Songs | Udit Narayan, Alka Yagnik, Kumar Sanu
+                         | 90's Hits · 90s पुराने गाने सदाबहार | 90's Love Hindi ...</p>
+                </div>
+                <div class="card">
+                    <img src="hindi/spotify.jpg" class="card-img">
+                    <p class="card-title">Radhe Shyam (Hindi)</p>
+                    <p class="card-info">
+                        Some of the latest Hindi songs which are a must-add in your playlist are Jersey, Dance Meri Rani
+                        , 83, Radhe Shyam (Hindi), Atrangi Re, Ni Jana, Mohabbat Hai, O ... </p>
+                </div>
+                <div class="card">
+                    <img src="hindi/hinidspotify.jpg" class="card-img">
+                    <p class="card-title">Hindi Song </p>
+                    <p class="card-info">6,661+ Hindi Song no copyright music · Download hindi song royalty-free audio tracks and 
+                        instrumentals for your next project. · Privacy Preference Center. When ... </p>
+                </div>
+                <div class="card">
+                    <img src="assets/sye.jpg" class="card-img">
+                    <p class="card-title">romantic Hindi songs</p>
+                    <p class="card-info">Some of the best romantic Hindi songs are 'Lag Ja Gale', 'Hum Akele Yuhi',
+                         'Ye Chand Sa Roshan Chehra' and 'Aanchal Me Saja Le'. </p>
+                </div>
+            </div>
+
+
+            
+            <h2>Telugu Songs Playlist</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="telugu/pushpa2.jpg" class="card-img">
+                    <p class="card-title">Pushpa movies songs</p>
+                    <p class="card-info">Listen to Telugu Viral Hits which has over 23 songs.
+                        top 50 telugu songs of the week 
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="telugu/besttelugu.jpg" class="card-img">
+                    <p class="card-title">Best Telugu songs</p>
+                    <p class="card-info">Most of telugu songs its best telugu songs 
+                        Your daily update of the most played tracks right... </p>
+                </div>
+                <div class="card">
+                    <img src="telugu/pushpa2.jpg" class="card-img">
+                    <p class="card-title">Pushpa2 songs- India</p>
+                    <p class="card-info">Its pushpa 2 songs its very  conductive songs 
+                        Download the music in high quality on JioSaavn. Home · Hindi Songs Playlist ..</p>
+                </div>
+                <div class="card">
+                    <img src="telugu/kushi.jpg" class="card-img">
+                    <p class="card-title">Kushi movies songs</p>
+                    <p class="card-info">Telugu movies songs ....
+                        Your daily update of the most played tracks right... </p>
+                </div>
+                <div class="card">
+                    <img src="telugu/hi.jpg" class="card-img">
+                    <p class="card-title">groups telugu songs</p>
+                    <p class="card-info">its telugu songs ....
+                        Your daily update of the most played tracks right... </p>
+                </div>
+            </div>
+
+            
+            <h2>Tamil Songs Playlist</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="tamil/sitarama.jpg" class="card-img">
+                    <p class="card-title">Tamil songs</p>
+                    <p class="card-info">Tamil songs its a Listen to tamil Viral Hits which has over 23 songs.
+                        top 50 tamil songs of the week 
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="tamil/vijay.jpg" class="card-img">
+                    <p class="card-title">all the best </p>
+                    <p class="card-info">the tamil songs its contine perfect songs in our songs ...
+                        Your daily update of the most played tracks right... </p>
+                </div>
+                <div class="card">
+                    <img src="tamil/night.jpg" class="card-img">
+                    <p class="card-title">its best songs </p>
+                    <p class="card-info"> tamil songs to speace of songs Download the music in high quality on JioSaavn. Home · Hindi Songs Playlist ..</p>
+                </div>
+                <div class="card">
+                    <img src="tamil/happyvibes.jpg" class="card-img">
+                    <p class="card-title">happyvibes songs </p>
+                    <p class="card-info">its content daily songs 
+                        Your daily update of the most played tracks right... make it fast daily songs </p>
+                </div>
+                <div class="card">
+                    <img src="tamil/group1.jpg" class="card-img">
+                    <p class="card-title">to contine perfect songs its </p>
+                    <p class="card-info">Your daily update of the most played tracks right... </p>
+                </div>
+                <div class="card">
+                    <img src="tamil/group2.jpg" class="card-img">
+                    <p class="card-title">make perfect songs for tamil</p>
+                    <p class="card-info">Your daily update of the most played tracks right... </p>
+                </div>
+                <div class="card">
+                    <img src="tamil/b1.jpg" class="card-img">
+                    <p class="card-title">Vijay sir songs </p>
+                    <p class="card-info">Good songs 
+                        all the best tamil good news 
+                        Your daily update of the most played tracks right... </p>
+                </div>
+                <div class="card">
+                    <img src="tamil/b2.jpg" class="card-img">
+                    <p class="card-title">group songs tamil</p>
+                    <p class="card-info">tamil songs with rajnikanth sir 
+                        Your daily update of the most played tracks right... </p>
+                </div>
+                <div class="card">
+                    <img src="tamil/b3.jpg" class="card-img">
+                    <p class="card-title">sethupathi songs </p>
+                    <p class="card-info">
+                        its perfect songs it containder 
+                        songs Your daily update of the most played tracks right... </p>
+                </div>
+                <div class="card">
+                    <img src="tamil/b4.jpg" class="card-img">
+                    <p class="card-title">Most views songs in tamill</p>
+                    <p class="card-info">The populer most views songs in tamil then good songs Your daily update of the most played tracks right... </p>
+                </div>
+            </div>
+            
+            <h2>malayama Songs Playlist</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="malayama/Romantic.jpg" class="card-img">
+                    <p class="card-title">Palavattam Pookkalam </p>
+                    <p class="card-info">01 Song - Palavattam Pookkalam 00:00 Movie - Manichithrathaazhu 
+                        (1993) Movie Director : Fazil Lyrics : Madhu Muttom Music : MG Radhakrishnan ...
+
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="malayama/Hits.jpg" class="card-img">
+                    <p class="card-title"> Best Malayalam Songs</p>
+                    <p class="card-info">Malayalam Melody Songs, Mollywood Melodies, 
+                        Best Malayalam Songs. Playlist Manager. 11,249 saves.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="malayama/Romantic.jpg" class="card-img">
+                    <p class="card-title">Top 50 - India</p>
+                    <p class="card-info">Download the music in high quality on 
+                        .... Download the music in high quality on JioSaavn. Home · Hindi Songs Playlist ..</p>
+                </div>
+                <div class="card">
+                    <img src="assets/viral2.jpg" class="card-img">
+                    <p class="card-title">Daivathinte Makan</p>
+                    <p class="card-info">Daivathinte Makan - Jukebox | Jayaram, Pooja Batra | Vidyasagar | 
+                        S. Ramesan Nair. Sony Music South · 26:48 · Sooryaputhran Malayalam Jukebox | Jayaram, ... </p>
+                </div>
+            </div>
+
+            <h2>Featured Charts</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="assets/card5img.jpeg" class="card-img">
+                    <p class="card-title">Top Songs - India Now Trending songs</p>
+                    <p class="card-info">Your daily update of the most played tracks right... </p>
+                </div>
+                <div class="card">
+                    <img src="assets/card6img.jpeg" class="card-img">
+                    <p class="card-title">Top 750 -Now Trending songs</p>
+                    <p class="card-info">Now Trending
+                        Your daily update of the most played tracks right... </p>
+                </div>
+                <div class="card">
+                    <img src="assets/card1img.jpeg" class="card-img">
+                    <p class="card-title">Top unlimited  songs - Global  Now Trending songs </p>
+                    <p class="card-info">Your daily update of the most played tracks right... </p>
+                </div>
+            </div>
+
+
+            <div class="footer">
+                <div class="line">
+                </div>
+            </div>
+        
+    </div>
+        <div class="music-player">
+            <div class="album">
+                <div class="imges">
+                    <img src="home/prakash.jpg">
+                </div>
+                <div class="paragraph">
+                    <p >Daylight Music </p>
+                    <p class="bold">Prakash Gupta</p>
+                </div>
+                <div class="albumicons">
+                    <img src="home/album_icon1.png"/>
+                    <img src="home/album_icon2.png" />
+                </div>
+            </div>
+
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./assets/player_icon1.png" class="player-control-icon">
+                    <img src="./assets/player_icon2.png" class="player-control-icon">
+                    <img src="./assets/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 2rem;">
+                    <img src="./assets/player_icon4.png" class="player-control-icon">
+                    <img src="./assets/player_icon5.png" class="player-control-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar">
+                    <span class="tot-time">3:33</span>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="controlicon">
+                    <img src="home/controls_icon1.png">
+                    <img src="home/controld_icon2.png">
+                    <img src="home/controls_icon3.png" style="opacity: 1; height: 2rem;">
+                    <img src="home/controls_icon4.png" >
+                    <img src="home/controls_icon5.png" >
+                </div>
+                <div class="volumecontrol">
+                    <label for="value">Volume</label>
+                    <input type="range" min="0" max="100" class="vol"/>
+                </div>
+                
+
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
